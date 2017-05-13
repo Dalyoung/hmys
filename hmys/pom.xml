@@ -3,7 +3,7 @@
   <groupId>hmys</groupId>
   <artifactId>hmys</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -25,4 +25,44 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+  	<!-- Spring -->
+	<spring-framework.version>4.3.8.RELEASE</spring-framework.version>
+	
+  </properties>
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${spring-framework.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${spring-framework.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring-framework.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>${spring-framework.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>${spring-framework.version}</version>
+	</dependency>
+  </dependencies>
+  <!-- <modules>
+  	<module>?</module>
+  </modules> -->
 </project>
